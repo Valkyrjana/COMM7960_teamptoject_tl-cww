@@ -1,0 +1,167 @@
+header {
+    height: 400px;
+    margin-left: 0px;
+}
+
+body{
+    margin: 0;
+    background-color: #222434;
+}
+
+
+
+ul{
+    padding-inline-start: 15px;
+}/*加的，上方logo靠左一点*/
+
+a{
+    text-decoration: none;
+    }/*加的，去掉超链接的下划线*/
+
+.navigation {
+    height: 60px;
+}
+
+.logo{
+    display: inline-block;
+    padding: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /*padding-left: 0px*/
+    font-style: oblique;/*加的，改了下字体*/
+    font-size: 20px;/*加的*/
+    font-weight: bold;/*加的*/
+    color:white;/*加的*/
+}
+
+.nav {
+    display: inline-block;
+    padding: 15px;/*调整俩俩间隔*/
+}
+
+.nav2 {
+    display: inline-block;
+    padding: 19px;/*调整俩俩间隔*/
+    float: right;
+}
+
+.nav_class {
+       /*display: inline;*/
+       font-family: Georgia, 'Times New Roman', Times, serif;
+       font-weight: bold;
+       padding: 15px;
+       color:white;
+       /*position: block;*/
+}
+
+.nav_class:hover{
+    /*background-color:#AD4AE6;*/
+    color: #AD4AE6;
+    font-size: 18px;
+    /*border-radius: 10px;*/
+  }
+
+.div_background {
+    height:300px;
+    background-image: url('image/health4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.link {
+    color: #86a2e4;
+    font-weight: bold;
+} 
+
+a.link:hover {
+    color:#AD4AE6;
+    border-radius: 10px;
+}
+
+p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 2.0;
+    color: #D1D3D4;
+    /*#333333;*/
+}
+
+h1 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1:hover {
+    color:#AD4AE6;
+}
+
+h2:hover {
+    color:#AD4AE6;
+}
+
+
+footer {
+  padding: 8px;
+  display: flex;
+  height: flex;
+  justify-content: space-between;
+  width: 98%;
+  font-size: 20px;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
+  margin-bottom: 0px;
+  background-color: black;/*加了个灰色背景*/
+}
+
+main
+{
+    width: 1140px;/*改了，左右不紧挨页面边框*/
+    margin: auto;
+    display: grid; 
+    grid-template-columns: 2fr 8fr; 
+    grid-gap:15px;
+}
+
+aside {
+
+    grid-column: 1;
+}
+
+section {
+    grid-column: 2;
+}
+
+a.aside {
+    color:#AD4AE6
+}
+
+a.aside:hover {
+    color: #AD4AE6;
+    font-size: 28px;
+}
+
+h2.aside {
+    color: white;
+}
+
+h4.aside {
+    color:#D1D3D4;
+    font-weight: light;
+}
+
+a {
+    color: #86a2e4;
+}
+
+/*.img_background {
+    background-image: url('image/ai.jpg');
+    background-position: center;
+    margin-top: 30%;
+}*/

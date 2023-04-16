@@ -1,0 +1,300 @@
+header {
+    height: 400px;
+    margin-left: 0px;   
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    background-color: #222434;
+}
+
+.navigation {
+    height: 60px;
+}
+
+.logo{
+    display: inline-block;
+    padding: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /*padding-left: 0px*/
+    font-style: oblique;/*加的，改了下字体*/
+    font-size: 20px;/*加的*/
+    font-weight: bold;/*加的*/
+    color:white;/*加的*/
+}
+ul{
+    padding-inline-start: 15px;
+}/*加的，上方logo靠左一点*/
+
+a{
+    text-decoration: none;
+    }/*加的，去掉超链接的下划线*/
+
+.nav {
+    display: inline-block;
+    padding: 15px;/*调整俩俩间隔*/
+}
+
+.nav2 {
+    display: inline-block;
+    padding: 19px;/*调整俩俩间隔*//*改了，不然感觉左边调整后，这个和其他的不在同一水平线*/
+    float: right;
+}
+
+.nav_class {
+       /*display: inline;*/
+       font-family: Georgia, 'Times New Roman', Times, serif;
+       font-weight: bold;
+       padding: 15px;
+       color:white;
+       /*position: block;*/
+}
+
+.nav_class:hover{
+    /*background-color:#AD4AE6;*/
+    color: #AD4AE6;
+    font-size: 18px;
+    /*border-radius: 10px;*/
+  }
+
+.div_background {
+    height:300px;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/60479868292a5d29e69ac6b9/096d2954-73b5-4614-a1f5-7805459dd7bc/Infographic+%282%29.gif?format=2500w');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+a.link:hover {
+    color:#F7B633;
+    border-radius: 10px;
+}
+
+p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 2.0;
+    color: #D1D3D4;
+    /*#333333;*/
+}
+
+h1 {
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1:hover {
+    color:#AD4AE6;
+}
+
+h2:hover {
+    color:#AD4AE6;
+}
+
+
+footer {
+    padding: 8px;
+    display: flex;
+    height: flex;
+    justify-content: space-between;
+    width: 98%;
+    font-size: 20px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    margin-bottom: 0px;
+    background-color: black;/*加了个灰色背景*/
+  }
+
+main
+{
+    width: 1140px;/*改了，左右不紧挨页面*/
+    margin: auto;
+    display: grid; 
+    grid-template-columns: 2fr 8fr; 
+    grid-gap:15px;
+}
+
+aside {
+
+    grid-column: 1;
+}
+
+section {
+    grid-column: 2;
+}
+
+a.aside {
+    color:#AD4AE6
+}
+
+a.aside:hover {
+    color: #AD4AE6;
+    font-size: 28px;
+}
+
+h2.aside {
+    color: white;
+}
+
+h4.aside {
+    color:#D1D3D4;
+    font-weight: light;
+}
+
+
+
+/*点左侧导航可以转到右侧相应内容，但是无法让右侧先随着页面下拉，顶到头之后再保持不动
+a.linkk {
+    color:#1F3C88
+}*/
+
+/*同上
+a.linkk:hover {
+    background-color: #F7B633;
+    border-radius: 10px;
+}*/
+
+
+/*.img_background {
+    background-image: url('image/ai.jpg');
+    background-position: center;
+    margin-top: 30%;
+}*/
+
+
+a{
+    color: #1F3C88;
+}/*这个是用在education_2.html的*/
+
+.imagee{
+    height: 230px; 
+    width: 350px; 
+    border-radius:5%;
+}/*这个是用在education_2.html的*/
+
+@keyframes radius{
+    0% {border-radius: 5%;}
+
+    100% {border-radius: 10%;}
+}
+
+.imagee:hover {
+    animation-name: radius;
+    animation-duration: 1s;
+    
+}
+
+.bg{
+    background-color: #AD4AE6;
+    /*background:radial-gradient(#9fb1d7,rgb(255, 255, 255))*/
+
+}/*这个是用在transportation_3.html的*/
+
+@keyframes translate{
+    0% {transform: translate(0, 0);}
+   
+    100% {transform: translate(820px, 0);}
+}
+
+.car_image{
+    animation-name: translate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    }
+
+/*新的格式for introduction*/
+.container1 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    display: grid;
+    width: 100%;
+    grid-gap: 20px;
+    height: auto;
+}
+
+.container1_item {
+    text-align:left;
+    
+}
+
+
+
+/*新加的格式 for challanges*/
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; 
+    width: 100%;
+    grid-gap: 20px;
+}
+
+.container_item {
+    text-align: center;
+    align-items:center;
+    padding: 0px;
+    
+}
+
+
+
+
+
+
+
+/*.main_left{
+    position: fixed;
+        top:76px;
+        left: 0;
+        width: 200px;
+        height: 100%;
+        background-color: #f1f1f1;
+}左侧不动
+
+header{
+    position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-color: #f1f1f1;
+}上方不动，但要再改上面大图的位置*/
+
+/*可以使左侧一直保持不动，但是会挡住上方的内容，无法让左侧先随着页面下拉，顶到头之后再保持不动
+.main_left{
+    position: fixed;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 100%;
+        background-color: #f1f1f1;
+}*/
+
+/*了解到overflow-y，但是不会用
+.main_left {
+    overflow-y: auto;
+    border-radius: 4px 4px 0 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0 4px 40px;
+    padding-top: 0px;
+    padding-right: 4px;
+    padding-bottom: 40px;
+    padding-left: 4px;
+}*/
+
+

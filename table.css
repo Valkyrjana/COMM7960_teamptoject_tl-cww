@@ -1,0 +1,16 @@
+th {
+    color: #AD4AE6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border: 2px;
+    padding: 5px;
+    border: 1px solid white;
+}
+
+td {
+    color: #D1D3D4;
+    font-family:Arial, Helvetica, sans-serif;
+    border: 2px;
+    padding: 7px;
+    border: 1px solid white;
+}
